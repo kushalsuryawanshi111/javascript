@@ -1,0 +1,101 @@
+<html>
+<title>String</title>
+<head>
+<script type="text/javascript">
+function cA()
+{
+var str=document.getElementById("text1").value;
+alert("The charAt() function returns index"+"  ' "+str.charAt(3)+" '  Character from "+ str);
+}
+ /*Break Function 1 */
+function cO()
+{
+var str=document.getElementById("text2").value;
+alert("The concat() function returns index"+"  * "+str.concat("IMRD")+" *  Character from "+ str);
+}
+ /Break Function 2/
+ 
+function Le()
+{
+var str=document.getElementById("text3").value;
+alert("The charAt() function returns value"+"  * "+str.length+" *  Character from "+ str);
+}
+/*Break Function 3 */
+function Io()
+{
+var str=document.getElementById("text4").value;
+alert("The charAt() function returns value"+"  * "+str.indexOf("n")+" *  Character from "+ str);
+}
+/*Break Function 4 */
+function Lo()
+{
+var str=document.getElementById("text5").value;
+alert("The charAt() function returns value"+"  * "+str.lastIndexOf("i")+" *  Character from "+ str);
+}
+/Break Function 5/
+function Sr()
+{
+var str=document.getElementById("text6").value;
+alert("The charAt() function returns value"+"  * "+str.search("lle")+" *  Character from "+ str);
+}
+/Break Function 6/
+function Sl()
+{
+var str=document.getElementById("text7").value;
+alert("The charAt() function returns index"+"  * "+str.slice(3)+" *  Character from "+ str);
+}
+/*Break Function 7 */
+function Tl()
+{
+var str=document.getElementById("text8").value;
+alert("The charAt() function returns index"+"  * "+str.toLowerCase()+" *  Character from "+ str);
+}
+/Break Function 8/
+function Tu()
+{
+var str=document.getElementById("text9").value;
+alert("The charAt() function returns index"+"  * "+str.toUpperCase()+" *  Character from "+ str);
+}
+/*Break Function 9 */
+function Re()
+{
+var str=document.getElementById("text10").value;
+alert("The charAt() function returns index"+"  * "+str.replace("SES","RCP")+" *  Character from "+ str);
+}
+</script>
+</head>
+<body bgcolor="skyblue">
+<h2>String Functions:</h2>
+<form>
+<input type="text"  id="text1" placeholder="Enter String">
+<input type="button" onclick="cA()" id= "btn1" value="chaAt">
+<br><br>
+<input type="text"  id="text2" placeholder="Enter String">
+<input type="button" onclick="cO()" id= "btn1" value="concat">
+<br><br>
+<input type="text"  id="text3" placeholder="Enter String">
+<input type="button" onclick="Le()" id= "btn1" value="length">
+<br><br>
+<input type="text"  id="text4" placeholder="Enter String">
+<input type="button" onclick="Io()" id= "btn1" value="indexOf">
+<br><br>
+<input type="text"  id="text5" placeholder="Enter String">
+<input type="button" onclick="Lo()" id= "btn1" value="last Index Of">
+<br><br>
+<input type="text"  id="text6" placeholder="Enter String">
+<input type="button" onclick="Sr()" id= "btn1" value="Search">
+<br><br>
+<input type="text"  id="text7" placeholder="Enter String">
+<input type="button" onclick="Sl()" id= "btn1" value="Slice">
+<br><br>
+<input type="text"  id="text8" placeholder="Enter String">
+<input type="button" onclick="Tl()" id= "btn1" value="Lower case">
+<br><br>
+<input type="text"  id="text9" placeholder="Enter String">
+<input type="button" onclick="Tu()" id= "btn1" value="Upper Case">
+<br><br>
+<input type="text"  id="text10" placeholder="Enter String">
+<input type="button" onclick="Re()" id= "btn1" value="Replace">
+</form>
+</body>
+</html>
