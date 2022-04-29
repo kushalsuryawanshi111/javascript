@@ -1,0 +1,71 @@
+<html>
+<head>
+<script type="text/javascript">
+function check_email()
+{
+var email_add=document.getElementById("email").value
+atpos=email_add.indexOf("@")
+dotpos=email_add.lastIndexOf(".")
+if (atpos<1 || dotpos<atpos+2 )
+{
+alert("Not Valid Email, please try again.");
+return false
+}
+else
+{
+return true
+}
+}
+function check_null()
+{
+var x=document.getElementById("Fname").value
+
+if (x=="")
+{
+alert("textfill should not be blank");
+return false
+}
+else
+{
+return true
+}
+}
+function check_mob()
+{
+var x=document.getElementById("Number").value
+
+if (x.length!=10)
+{
+alert("Enter only 10 digits number");
+return false
+}
+else
+{
+return true
+}
+}
+function check_onlynum()
+{
+var x=document.getElementById("Number3").value
+
+if (isNaN(x))
+{
+alert("Mo.no only number accept");
+document.getElementById("Number3").value="";
+return false
+}
+else
+{
+return true
+}
+}
+
+</script>
+</head>
+<body>
+Enter Name<br><input type="text" id="Fname"onblur="return check_null()"><br>
+Enter Email<br><input type="text" id="email"onclick="return check_email()"><br>
+Enter Mo.No<br><input type="text" id="Number"onblur="return check_mob()"><br>
+Enter Number <br><input type="text" id="Number3"onkeypress="return check_onlynum()"><br>
+</body>
+</html>
